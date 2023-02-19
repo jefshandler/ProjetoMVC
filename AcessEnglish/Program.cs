@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AcessEnglish.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AcessEnglishContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AcessEnglishContext") ?? throw new InvalidOperationException("Connection string 'AcessEnglishContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
