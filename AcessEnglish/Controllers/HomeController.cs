@@ -1,4 +1,4 @@
-﻿using AcessEnglish.Models;
+﻿using AcessEnglish.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

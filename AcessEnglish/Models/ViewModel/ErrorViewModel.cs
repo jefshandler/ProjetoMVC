@@ -1,4 +1,4 @@
-namespace AcessEnglish.Models
+namespace AcessEnglish.Models.ViewModel
 {
     public class ErrorViewModel
     {
